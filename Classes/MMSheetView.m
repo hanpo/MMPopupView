@@ -196,22 +196,22 @@
     
     if ( self )
     {
-        self.buttonHeight   = 50.0f;
-        self.innerMargin    = 19.0f;
+        self.buttonHeight   = 64.0f;
+        self.innerMargin    = 24.0f;
         
-        self.titleFontSize  = 14.0f;
-        self.buttonFontSize = 17.0f;
+        self.titleFontSize  = 18.0f;
+        self.buttonFontSize = 16.0f;
         
         self.backgroundColor    = MMHexColor(0xFFFFFFFF);
-        self.titleColor         = MMHexColor(0x666666FF);
-        self.splitColor         = MMHexColor(0xCCCCCCFF);
+        self.titleColor         = MMHexColor(0xB9B9B9FF);
+        self.splitColor         = MMHexColor(0xE3E3E3FF);
         
-        self.itemNormalColor    = MMHexColor(0x333333FF);
+        self.itemNormalColor    = MMHexColor(0x454545FF);
         self.itemDisableColor   = MMHexColor(0xCCCCCCFF);
-        self.itemHighlightColor = MMHexColor(0xE76153FF);
+        self.itemHighlightColor = MMHexColor(0xFF5C39FF);
         self.itemPressedColor   = MMHexColor(0xEFEDE7FF);
         
-        self.defaultTextCancel  = @"取消";
+        self.defaultTextCancel  = @"Cancel";
     }
     
     return self;
