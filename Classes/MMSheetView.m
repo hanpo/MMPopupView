@@ -203,7 +203,7 @@
         self.buttonFontSize = 16.0f;
         
         self.backgroundColor    = MMHexColor(0xFFFFFFFF);
-        self.titleColor         = MMHexColor(0xB9B9B9FF);
+        self.titleColor         = MMHexColor(0x454545FF);
         self.splitColor         = MMHexColor(0xE3E3E3FF);
         
         self.itemNormalColor    = MMHexColor(0x454545FF);

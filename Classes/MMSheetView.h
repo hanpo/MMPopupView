@@ -31,7 +31,7 @@
 @property (nonatomic, assign) CGFloat buttonFontSize;       // Default is 16.
 
 @property (nonatomic, strong) UIColor *backgroundColor;     // Default is #FFFFFFFF.
-@property (nonatomic, strong) UIColor *titleColor;          // Default is #B9B9B9FF.
+@property (nonatomic, strong) UIColor *titleColor;          // Default is #454545FF.
 @property (nonatomic, strong) UIColor *splitColor;          // Default is #E3E3E3FF
 
 @property (nonatomic, strong) UIColor *itemNormalColor;     // Default is #454545FF. effect with MMItemTypeNormal
