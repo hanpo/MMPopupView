@@ -132,8 +132,17 @@
         [self.cancelButton setTitle:config.defaultTextCancel forState:UIControlStateNormal];
         [self.cancelButton setTitleColor:config.itemNormalColor forState:UIControlStateNormal];
         
+        CGFloat btmOffset = 0;
+        CGSize screenSize = [UIScreen mainScreen].bounds.size;
+        if(screenSize.height == 812){
+            btmOffset = 43;     // iPhoneX Portrait
+        }
+        if( screenSize.width == 812 ) {
+            btmOffset = 33;     // iPhoneX Landscape
+        }
+        
         [self mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.bottom.equalTo(self.cancelButton.mas_bottom);
+            make.bottom.equalTo(self.cancelButton.mas_bottom).offset(btmOffset);
         }];
         
     }
