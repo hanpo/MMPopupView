@@ -35,8 +35,8 @@
     MMAlertViewConfig *config = [MMAlertViewConfig globalConfig];
     
     NSArray *items =@[
-                      MMItemMake(config.defaultTextCancel, MMItemTypeHighlight, nil),
-                      MMItemMake(config.defaultTextConfirm, MMItemTypeHighlight, nil)
+                      MMItemMake(config.defaultTextCancel, MMItemTypeNormal, nil),
+                      MMItemMake(config.defaultTextConfirm, MMItemTypeNormal, nil)
                       ];
     return [self initWithTitle:title detail:detail items:items inputPlaceholder:inputPlaceholder inputHandler:inputHandler];
 }
@@ -47,7 +47,7 @@
     MMAlertViewConfig *config = [MMAlertViewConfig globalConfig];
     
     NSArray *items =@[
-                      MMItemMake(config.defaultTextOK, MMItemTypeHighlight, nil)
+                      MMItemMake(config.defaultTextOK, MMItemTypeNormal, nil)
                       ];
     
     return [self initWithTitle:title detail:detail items:items];
@@ -343,7 +343,7 @@
     if ( self )
     {
         self.width          = 275.0f;
-        self.buttonHeight   = 50.0f;
+        self.buttonHeight   = 64.0f;
         self.innerMargin    = 25.0f;
         self.cornerRadius   = 5.0f;
 
@@ -352,17 +352,17 @@
         self.buttonFontSize = 17.0f;
         
         self.backgroundColor    = MMHexColor(0xFFFFFFFF);
-        self.titleColor         = MMHexColor(0x333333FF);
+        self.titleColor         = MMHexColor(0x454545FF);
         self.detailColor        = MMHexColor(0x333333FF);
-        self.splitColor         = MMHexColor(0xCCCCCCFF);
+        self.splitColor         = MMHexColor(0xE3E3E3FF);
 
-        self.itemNormalColor    = MMHexColor(0x333333FF);
-        self.itemHighlightColor = MMHexColor(0xE76153FF);
+        self.itemNormalColor    = MMHexColor(0x454545FF);
+        self.itemHighlightColor = MMHexColor(0xFF5C39FF);
         self.itemPressedColor   = MMHexColor(0xEFEDE7FF);
         
-        self.defaultTextOK      = @"好";
-        self.defaultTextCancel  = @"取消";
-        self.defaultTextConfirm = @"确定";
+        self.defaultTextOK      = @"OK";
+        self.defaultTextCancel  = @"Cancel";
+        self.defaultTextConfirm = @"Confirm";
     }
     
     return self;
